@@ -46,15 +46,18 @@ export default function Side() {
             </div>
           </Link>
         </div>
+
         <Separator className="mt-4 bg-gray-400" />
-        <p className="pt-2">Organisations</p>
-        <Image
-          src="/icons/AdaTechSchool.png"
-          alt="Ada Tech School"
-          width={40}
-          height={40}
-          className="rounded-lg mt-2 cursor-pointer"
-        />
+        <div className="flex flex-col space-x-2 mt-2">
+          <p className="pt-2">Organisations</p>
+          <Image
+            src="/icons/AdaTechSchool.png"
+            alt="Ada Tech School"
+            width={40}
+            height={40}
+            className="rounded-lg mt-2 cursor-pointer"
+          />
+        </div>
       </div>
     </div>
   );
