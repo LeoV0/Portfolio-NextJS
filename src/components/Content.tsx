@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Content() {
   return (
-    <section className="border border-gray-500 w-full rounded-lg p-4 text-white mt-10">
+    <section className="border border-gray-500 w-full rounded-lg p-4 text-white mt-10 h-auto">
       <p className="text-xs">LeoV0/README.md</p>
       <p className="pt-5 pb-2">
         Je suis Léo, actuellement étudiant à Ada Tech School !
@@ -17,7 +17,6 @@ export default function Content() {
       </p>
       <div className="flex justify-center pt-6 gap-10">
         {" "}
-        {/* Remplacé pt-15 par pt-6 */}
         <div className="flex items-center space-x-2 mt-2">
           <Image
             src="/icons/react.svg"

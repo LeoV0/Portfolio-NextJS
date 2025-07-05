@@ -6,7 +6,8 @@ import { Separator } from "./ui/separator";
 
 export default function Side() {
   return (
-    <div className="flex flex-col py-10">
+    <div className="flex flex-col py-10 max-w-xs mx-auto md:max-w-none md:mx-0">
+      {" "}
       <div>
         <Image
           src="/photoPresentation.jpg"
