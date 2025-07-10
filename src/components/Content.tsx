@@ -1,6 +1,13 @@
 import React from "react";
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
+import Link from "next/link";
+
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 export default function Content() {
   return (
@@ -18,44 +25,80 @@ export default function Content() {
       <div className="flex justify-center pt-6 gap-10">
         {" "}
         <div className="flex items-center space-x-2 mt-2">
-          <Image
-            src="/icons/react.svg"
-            alt="React Icon"
-            width={40}
-            height={40}
-          />
+          <Tooltip>
+            <TooltipTrigger>
+              <Link href="https://react.dev/" target="_blank">
+                <Image
+                  src="/icons/react.svg"
+                  alt="React Icon"
+                  className="cursor-pointer"
+                  width={40}
+                  height={40}
+                />
+              </Link>
+            </TooltipTrigger>
+            <TooltipContent>React</TooltipContent>
+          </Tooltip>
         </div>
         <div className="flex items-center space-x-2 mt-2">
-          <Image
-            src="/icons/nextjs-icon.svg"
-            alt="Next.js Icon"
-            width={40}
-            height={40}
-          />
+          <Tooltip>
+            <TooltipTrigger>
+              <Link href="https://nextjs.org/docs" target="_blank">
+                <Image
+                  src="/icons/nextjs-icon.svg"
+                  alt="Next.js Icon"
+                  width={40}
+                  height={40}
+                />
+              </Link>
+            </TooltipTrigger>
+            <TooltipContent>Next JS</TooltipContent>
+          </Tooltip>
         </div>
         <div className="flex items-center space-x-2 mt-2">
-          <Image
-            src="/icons/tailwindcss.svg"
-            alt="Tailwind CSS Icon"
-            width={40}
-            height={40}
-          />
+          <Tooltip>
+            <TooltipTrigger>
+              <Link href="https://tailwindcss.com/" target="_blank">
+                <Image
+                  src="/icons/tailwindcss.svg"
+                  alt="Tailwind CSS Icon"
+                  width={40}
+                  height={40}
+                />
+              </Link>
+            </TooltipTrigger>
+            <TooltipContent>Tailwind</TooltipContent>
+          </Tooltip>
         </div>
         <div className="flex items-center space-x-2 mt-2">
-          <Image
-            src="/icons/javascript.svg"
-            alt="JavaScript Icon"
-            width={40}
-            height={40}
-          />
+          <Tooltip>
+            <TooltipTrigger>
+              <Link href="https://developer.mozilla.org/fr/docs/Web/JavaScript">
+                <Image
+                  src="/icons/javascript.svg"
+                  alt="JavaScript Icon"
+                  width={40}
+                  height={40}
+                />
+              </Link>
+            </TooltipTrigger>
+            <TooltipContent>Javascript</TooltipContent>
+          </Tooltip>
         </div>
         <div className="flex items-center space-x-2 mt-2">
-          <Image
-            src="/icons/arduino.svg"
-            alt="Arduino Icon"
-            width={40}
-            height={40}
-          />
+          <Tooltip>
+            <TooltipTrigger>
+              <Link href="https://docs.arduino.cc/" target="_blank">
+                <Image
+                  src="/icons/arduino.svg"
+                  alt="Arduino Icon"
+                  width={40}
+                  height={40}
+                />
+              </Link>
+            </TooltipTrigger>
+            <TooltipContent>Arduino</TooltipContent>
+          </Tooltip>
         </div>
       </div>
     </section>
