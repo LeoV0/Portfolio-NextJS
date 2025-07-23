@@ -18,7 +18,7 @@ export default function Side() {
         />
       </div>
       <div className="text-left">
-        <h1 className="text-4xl font-bold pt-4">Léo Gousset</h1>
+        <h1 className="text-4xl font-bold pt-4">Léo</h1>
         <div className="flex items-center space-x-2 mt-2">
           <MapPin width={18} height={18} />
           <p className="text-gray-400 max-w-prose">Nantes, France</p>
